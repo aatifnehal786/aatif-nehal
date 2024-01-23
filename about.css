@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    background: #ddd;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    /* text-decoration: none; */
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    /* font-size: 3.5rem; */
+}
+
+/* ########################## UTILITY CLASSES ##################### */
+.container{
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.mg-heading{
+    font-size: 2.2rem;
+}
+.md-heading{
+    font-size: 1.8rem;
+}
+
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background: #fff;
+    border-radius: 10rem;
+
+
+}
+.bg-dark{
+    background-color: #263238;
+}
+.form-font{
+    font-size: 2rem;
+}
+
+/* ######### about page navbar styling #################### */
+
+.navbar{
+    padding: 1rem;
+}
+.navbar .logo{
+    float: left;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+
+}
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+.navbar a:hover{
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0.2em;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container h2{
+    padding-top: 1.5rem;
+}
+
+
+
+.about-wrapper{
+    padding: 5rem;
+    text-align: center;
+}
+.about-section h2::after{
+    display: block;
+    content: '';
+    border: 3px solid #e63946;
+}
+.about-profile{
+    width: 800px;
+    height: 300px;
+    /* border: 2px solid red; */
+    display: flex;
+    
+}
+
+.about-profile .image-content{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
+.about-profile .image-content img{
+    padding: 1rem;
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+}
+
+.image-content h3{
+    margin: 1rem;
+}
+
+
+.cta-banner::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.cta-banner{
+    margin: 20rem 10rem;
+    background-color: #e63946;
+    
+}
+.cta-banner-left{
+    float: left;
+    width: 80%;
+}
+.cta-banner-right{
+    float: right;
+    width: 20%;
+}
+.cta-line{
+    color: #f4f4f4;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.btn-cta{
+    color: #f4f4f4;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 2px solid #fff;
+    margin: 1rem;
+}
+.ft-section{
+    background-color: #333;
+    /* display: inline-block; */
+    /* padding: 2rem; */
+    margin-top: 2rem;
+    height: 90%;
+    
+
+}
+.ft-section, i{
+    text-align: center;
+    padding: 0.5em;
+    
+}
+.ft-section, p{
+    text-align: center;
+    
+}
+
+/* ############ CONTACT PAGE STYLING ######## */
+
+.contact-form{
+    padding: 5rem 0;
+}
+.form-wrapper::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+
+}
+
+.form-wrapper .company-address{
+    width: 49%;
+    float: left;
+}
+.form-wrapper .form{
+    width: 49%;
+    float: right;
+}
+.address-group{
+    margin: 1.2rem;
+    padding: 2rem;
+}
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .cta-banner{
+        width: 100%;
+        height: 20%;
+    }
+    .cta-banner .cta-banner-left,
+    .cta-banner .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .cta-banner{
+        width: 100%;
+        height: 20%;
+    }
+    .cta-banner .cta-banner-left,
+    .cta-banner .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+
+    }
+}
