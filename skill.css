@@ -117,38 +117,9 @@ h1, h2, h3{
 
 
 /* ########## SKILL SECTION STYLING ######### */
-.container h2{
-    margin-left: 13rem;
-}
+
 .skill-section{
-  width: 400px;
-    height: auto;
-    
-    
-    margin:  0;
-    /* background-color: #e63946; */
     display: flex;
-    /* padding-top: 2rem; */
-}
-.skill-items h2{
-    /* border: 2px solid red; */
-    margin-left: 5rem;
-    padding-left: 2rem;
-}
-
-
-.skill img{
-    display: block;
-    width: 200px;
-    height: 300px;
-    /* border-radius: 20rem; */
-    margin-top: 1rem;
-    padding: 1rem;
-}
-
-.about-para p{
-    padding: 1rem;
-    color: #263238;
 }
 .about-para{
     /* flex: 1 1 400px; */
@@ -162,6 +133,7 @@ h1, h2, h3{
         transform: translate(0)
     }
 }
+
 .skill img{
     /* flex: 1 1 400px; */
     /* padding: 30px; */
@@ -177,20 +149,13 @@ h1, h2, h3{
         transform: translate(0);
     }
 }
-.about-image img{
-    display: block;
-    height: 400px;
-    max-width: 100%;
-    margin: auto;
-    object-fit: cover;
-    object-position: right;
-}
+
 
 .items{
     display: flex;
 }
-.skill-items h2{
-    padding: 1rem;
+.skill-items a:hover{
+    color: greenyellow;
 }
 
 .items .skill-topic{
@@ -203,6 +168,12 @@ h1, h2, h3{
 }
 .skill-image{
     display: flex;
+}
+.skill-image img{
+    /* margin: 2rem; */
+    width: 150px;
+    height: 150px;
+    margin-left: 4rem;
 }
 
 .ft-section{
@@ -236,4 +207,30 @@ h1, h2, h3{
         width: 100%;
     }
 
+}
+
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .skill-section{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .items{
+        flex-direction: column;
+        
+    }
+    .skill-image img{
+        padding: 1rem;
+
+    }
 }
