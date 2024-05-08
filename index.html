@@ -2,114 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/569385f157.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css ">
-    <title>PORTFOLIO Website</title>
+    <link rel="stylesheet" href="./weather.css">
+    <script src="./weather.js" defer></script>
+    <title>Document</title>
 </head>
 <body>
-    
-    <header class="header">
-
-       
-
-        <nav class="navbar">
-            <div class="container">
-
-                <h1 class="logo lg-heading text-light">WT</h1>
-                
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="./index.html">Home</a></li>
-                    <li class="nav-item"><a href="./about.html">about</a></li>
-                    <li class="nav-item"><a href="./contact.html">contact</a></li>
-                </ul>
-            </div>
-
-        </nav>
-        <div class="header-content">
-            <h1 class="lg-heading text-light">EXPLORING NEW ERA</h1>
-            <p class="text-light">
-                Hey,want to join with us into new it technologies
-            </p>
-            <a href="#explore" class="btn btn-primary text-red md-heading">Explore places</a>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name">
+            <button><img src="./search.png" alt=""></button>
         </div>
-    </header>
-    <section class="showcase container" id="explore">
-        
-
-            <div class="row row1">
-                <div class="img-box"><img src="./image-1.jpg" alt=""></div>
-                <div class="text-box">
-                    <h2 class="text-black lg-heading">Data Analysis</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima itaque ratione distinctio sed doloremque aut aperiam dolorum sequi totam.</p>
-                    <a href="" class="btn btn-primary text-red">more</a>
-                </div>
-    
-                </div>
-            </div>
-            <div class="row row2">
-                <div class="img-box"><img src="./image-2.jpg" alt=""></div>
-                <div class="text-box">
-                    <h2 class="text-black lg-heading">Electronics & Communication</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima itaque ratione distinctio sed doloremque aut aperiam dolorum sequi totam.</p>
-                    <a href="" class="btn btn-primary text-red">more</a>
-                </div>
+        <div class="logo" id="list">
+           <h2 class="heading">Loading....</h2>
+        </div>
+        <div class="weather">
+            <img src="./rain.png" alt="" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+        </div>
+        <div class="details">
+            <div class="col">
+                <img src="./humidity.png" alt="">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
                 </div>
             </div>
-
-            </section>
-
-        
-
-    </section>
-    <div class="container">
-        <section class="features">
-            <div class="box-wrapper">
-                <div class="box box-1">
-                    <h2 class="md-heading">DATA SCIENCE</h2>
-                    <p>Data science, machine learning, and artificial intelligence represent interconnected fields that have rapidly transformed the landscape of technology and decision-making. Data science is the discipline that encompasses the extraction of valuable insights from vast datasets, employing statistical and computational techniques</p>
-                    <a href="https://en.wikipedia.org/wiki/Data_science" class="btn btn-primary text-red">more</a>
-                </div>
-                <div class="box box-2">
-                    <h2 class="md-heading">MACHINE LEARNING</h2>
-                    <p class="text-light">Machine learning, a subset of artificial intelligence, focuses on developing algorithms that enable computers to learn and make predictions or decisions without explicit programming. Artificial intelligence, on the other hand, encompasses a broader scope, involving the creation of intelligent agents capable of mimicking human-like cognitive functions. </p>
-                    <a href="https://en.wikipedia.org/wiki/Machine_learning" class="btn btn-primary text-red">more</a>
-                </div>
-                <div class="box box-3">
-                    <h2 class="md-heading">ARTIFICIAL INTELLIGENCE</h2>
-                    <p>Data science leverages algorithms and statistical models, while machine learning empowers systems to improve performance based on experience, and artificial intelligence aims to create intelligent systems that can adapt and learn autonomously. The integration of these technologies continues to redefine how we analyze data and automate-tasks</p>
-                    <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="btn btn-primary text-red md-heading">more</a>
-
-
+            <div class="col">
+                <img src="./wind.png" alt="">
+                <div>
+                    <p class="wind"></p>
+                    <p>Wind Speed</p>
                 </div>
             </div>
-        </section>
-
+        </div>
     </div>
-
-    
-        <footer class="ft-section text-light">
-            
-                <i class="fa-brands fa-facebook fa-4x"></i>
-                <i class="fa-brands fa-twitter fa-4x"></i>
-                <i class="fa-brands fa-instagram fa-4x"></i>
-                <!-- <a href="#" class="fa fa-twitter"></a> -->
-            
-            <p class="mg-heading">PORTFOLIO &copy; All Rights Reserved</p>
-            
-        </footer>
-    
-
-   
-     
-
-    
-    
-
-
-
-      
-       
 </body>
 </html>
